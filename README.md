@@ -1,4 +1,4 @@
-HRV Monitoring Project
+HRV Monitoring Project - 
 This is my personal fork of the HRV Monitoring project, an integrated iOS/Apple Watch application designed for real-time heart rate monitoring, HRV analysis, and event detection. The project captures heart rate data via HealthKit on the Apple Watch, sends it to the iOS app using WCSession, and processes it to compute HRV metrics such as RMSSD, SDNN, and pNN50. It then displays these metrics, and sends them to an AWS database for researchers to access at a later time. This was our first time using swift, so there was a lot of research and learning involved. 
 
 Note:
