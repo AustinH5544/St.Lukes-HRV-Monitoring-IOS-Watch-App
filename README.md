@@ -15,7 +15,7 @@ HRV Analysis:
 Processes a rolling window of beats to calculate HRV metrics including RMSSD, SDNN, and pNN50.
 
 Event Detection:
-Automatically triggers an event when the BPM exceeds 100 and ends the event when the BPM drops below 100.
+Automatically triggers an event when the HRV metrics reach a certain threshold that can be set by the doctors using it. 
 
 Cloud Database:
 HRV metrics are ananomized and securely sent to an AWS database.
