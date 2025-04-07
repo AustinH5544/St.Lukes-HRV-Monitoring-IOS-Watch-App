@@ -1,4 +1,24 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/ixLrLXsm)
-[![Open in Codespaces](https://classroom.github.com/assets/launch-codespace-2972f46106e565e64193e422d61a12cf1da4916b45550586e14ef0a7c637dd04.svg)](https://classroom.github.com/open-in-codespaces?assignment_repo_id=16315807)
+HRV Monitoring Project
+This is my personal fork of the HRV Monitoring project, an integrated iOS/Apple Watch application designed for real-time heart rate monitoring, HRV analysis, and event detection. The project captures heart rate data via HealthKit on the Apple Watch, sends it to the iOS app using WCSession, and processes it to compute HRV metrics such as RMSSD, SDNN, and pNN50. It then displays these metrics, and sends them to an AWS database for researchers to access at a later time. This was our first time using swift, so there was a lot of research and learning involved. 
 
-More readmes are within the folders for specific details.
+Note:
+This project was developed in a tight 10-week timeframe while managing two other classes, so not every feature is fully complete. I plan to continue refining and expanding its functionality in the future.
+
+Features
+Real-Time Heart Rate Capture:
+Utilizes HealthKit on the Apple Watch to collect heart rate data.
+
+Data Synchronization:
+Leverages WatchConnectivity (WCSession) to transfer data between the Apple Watch and iOS device.
+
+HRV Analysis:
+Processes a rolling window of beats to calculate HRV metrics including RMSSD, SDNN, and pNN50.
+
+Event Detection:
+Automatically triggers an event when the BPM exceeds 100 and ends the event when the BPM drops below 100.
+
+Cloud Database:
+HRV metrics are ananomized and securely sent to an AWS database.
+
+Comprehensive Documentation:
+Includes detailed deployment, user, and developer guides for a smooth handoff and further development.
